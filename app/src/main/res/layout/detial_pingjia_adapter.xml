@@ -66,9 +66,10 @@
         android:id="@+id/tv_content_pingjia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/text_12"
-        android:padding="5dp"
+        android:textSize="@dimen/text_14"
+        android:padding="8dp"
         android:maxLines="4"
-       android:text="44444444444" />
+       android:text="44444444444"
+        android:textColor="@color/black"/>
 
 </LinearLayout>
