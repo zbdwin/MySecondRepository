@@ -4,6 +4,7 @@ package com.bwf.framwork.http;
 import com.bwf.framwork.utils.UrlUtils;
 import com.zhy.http.okhttp.OkHttpUtils;
 import com.zhy.http.okhttp.callback.BitmapCallback;
+import com.zhy.http.okhttp.callback.StringCallback;
 
 /**
  * Created by Lizhangfeng on 2016/7/13 0013.
@@ -171,4 +172,49 @@ public static void getBannerServlet(String cityId, HttpCallBack callBack) {
                 .build()
                 .execute(callBack);
     }
+
+    /**
+     *
+     * 18、婚姻座驾
+     接口地址：bwf_TuanChe_AdplistServlet
+     *
+     *
+     */
+    public static void getAdplistServlet( HttpCallBack callBack) {
+        OkHttpUtils
+                .get()
+                .url(UrlUtils.ADALISTSERVLET)
+                .build()
+                .execute(callBack);
+    }
+
+
+    /**
+     *  /**
+     * 1
+     6、汽车—热门搜索
+     接口地址：bwf_TuanChe_SearchhotServlet
+
+     */
+
+    public static void getSearchhotServlet( String cityId,StringCallback callBack) {
+        OkHttpUtils
+                .get()
+                .addParams("cityId",cityId)
+                .url(UrlUtils.SEARCHHOTSERVLET)
+                .build()
+                .execute(callBack);
+    }
+/*
+
+19、版本更新
+接口地址：bwf_TuanChe_VersionUpadteServlet
+ */
+public static void getVersionUpadteServlet( HttpCallBack callBack) {
+    OkHttpUtils
+            .post()
+            .url(UrlUtils.VERSIONUPADTESERVLET)
+            .build()
+            .execute(callBack);
+}
 }

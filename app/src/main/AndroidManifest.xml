@@ -14,7 +14,6 @@
     <uses-permission android:name="android.permission.USE_CREDENTIALS" />
     <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
 
-
     <application
         android:name=".MyApplication"
         android:allowBackup="true"
@@ -41,7 +40,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".BlankPage"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -55,40 +53,37 @@
             android:theme="@style/AppTheme.NoActionBar">
             >
         </activity>
-
         <activity
             android:name=".homepage.Home_order"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".homepage.entity.adapter.Wellcome_poster"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".homepage.Home_margin"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-
-
+        <activity
+            android:name=".homepage.Home_margin"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".tuancheDetial.TuanDetialActivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".tuancheDetial.DetialMorePingjiaActivity"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <!-- Umeng 分享、登录-->
+        <activity
+            android:name=".tuancheDetial.DetialMorePingjiaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- Umeng 分享、登录 -->
         <activity
             android:name="com.umeng.socialize.editorpage.ShareActivity"
-            android:theme="@style/Theme.UMDefault"
-            android:excludeFromRecents="true"/>
-        <!-- QQ\QQZone-->
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <!-- QQ\QQZone -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
-            android:noHistory="true" >
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
+
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
+
                 <data android:scheme="tencent100424468" />
             </intent-filter>
         </activity>
@@ -99,13 +94,18 @@
 
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="57aa8a2067e58e23de0030b1" >
-        </meta-data>
+            android:value="57aa8a2067e58e23de0030b1" />
+        <!-- 搜素页面 -->
 
-
-
-
-
+        <activity
+            android:name=".homepage.Search.Search_Details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <!-- 婚姻座驾 -->
+        <activity
+            android:name=".homepage.HomepageFagment_Details.HomePageFragment7"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".homepage.Search.Search_Details_All"></activity>
+        <activity android:name=".homepage.version_Message.VersionCode"/>
     </application>
 
 </manifest>

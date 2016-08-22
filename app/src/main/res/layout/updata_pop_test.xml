@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="#55000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="110dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/updata"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/relatupdata"
+            android:gravity="center_vertical"
+            android:text="版本更新信息"
+            android:paddingLeft="40dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/text_16"
+            android:id="@+id/updatatextView" />
+
+        <RelativeLayout
+            android:id="@+id/relatupdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/dialog_red_bg"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/relatupdatanow"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/updata1"
+                android:gravity="center"
+                android:text="立即更新"
+                android:textColor="@color/withe" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="70dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/upgrade_hint"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/updatadiss"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="115dp"
+        android:layout_marginRight="15dp"
+        android:src="@mipmap/icon_close_normal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+<WebView
+    android:id="@+id/VersionCodeview"
+    android:layout_width="1dp"
+    android:layout_height="1dp"
+   ></WebView>
+</RelativeLayout>

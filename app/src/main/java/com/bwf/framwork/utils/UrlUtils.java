@@ -68,4 +68,33 @@ public class UrlUtils {
      cityId：城市Id
      */
     public static final String   TUANCHE_HOTSTYLE =BASE_URL+ "bwf_TuanChe_Hotstyle";
+
+    /**
+     * /**
+     *
+     * 18、婚姻座驾
+     接口地址：bwf_TuanChe_AdplistServlet
+     *
+     *
+     */
+
+    public static final String   ADALISTSERVLET =BASE_URL+ "bwf_TuanChe_AdplistServlet";
+
+    /**
+     * 1
+     6、汽车—热门搜索
+     接口地址：bwf_TuanChe_SearchhotServlet
+
+     */
+
+    public static final String   SEARCHHOTSERVLET =BASE_URL+ "bwf_TuanChe_SearchhotServlet";
+
+    /*
+
+19、版本更新
+接口地址：bwf_TuanChe_VersionUpadteServlet
+ */
+    public static final String   VERSIONUPADTESERVLET =BASE_URL+ "bwf_TuanChe_VersionUpadteServlet";
 }
+
+

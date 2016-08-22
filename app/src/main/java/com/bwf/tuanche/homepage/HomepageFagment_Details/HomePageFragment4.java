@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 
 import com.bwf.framwork.base.BaseFragment;
 import com.bwf.framwork.http.HttpCallBack;
@@ -49,6 +50,12 @@ public class HomePageFragment4 extends BaseFragment {
         homePageFragment4_05 = findViewByIdNoCast(R.id.homePageFragment4_05);
         homePageFragment4_06 = findViewByIdNoCast(R.id.homePageFragment4_06);
         homePageFragment4_07 = findViewByIdNoCast(R.id.homePageFragment4_07);
+        findViewByIdNoCast(R.id.marriagelin).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IntentUtils.openActivity(getContext(),HomePageFragment7.class);
+            }
+        });
 
         homePageFragment4_08 = findViewByIdNoCast(R.id.homePageFragment4_08);
         homePageFragment4_02.setOnClickListener(new View.OnClickListener() {

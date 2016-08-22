@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/withe"
+    tools:context="com.bwf.tuanche.homepage.HomepageFagment_Details.HomePageFragment7">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <ImageView
+        android:id="@+id/adplistback"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:src="@mipmap/icon_back"
+        android:padding="13dp"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:text="婚姻座驾"
+        android:gravity="center"
+        android:textSize="@dimen/text_18"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/adplistshar"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:src="@mipmap/icon_fenxiang"
+        android:padding="13dp"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        >
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/adplisthomepageimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/adplisthomepagerec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
