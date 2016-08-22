@@ -114,6 +114,8 @@
             android:id="@+id/lv_buy_car_pingjia"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:divider="@color/simple_black"
+            android:dividerHeight="1dp"
             />
     </LinearLayout>
 </ScrollView>

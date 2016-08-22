@@ -3,6 +3,7 @@ package com.bwf.tuanche.tuancheDetial.mypop;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -108,6 +109,7 @@ public class MyPopwindow1 extends PopupWindow{
         ListView listView=new ListView(MyApplication.getAppContext());
         LinearLayout.LayoutParams params1=new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
         listView.setLayoutParams(params1);
+        //listView.setDividerHeight(1);
         final DetialCarList carList=new DetialCarList(MyApplication.getAppContext());
         carList.settList(styleList.get(j).styleList);
         listView.setAdapter(carList);
